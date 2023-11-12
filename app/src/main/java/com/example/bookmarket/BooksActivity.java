@@ -3,13 +3,12 @@ package com.example.bookmarket;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.Toast;
 
-public class BookActivity extends AppCompatActivity {
+public class BooksActivity extends AppCompatActivity {
 
     TableLayout upperObj, lowerObj; // 1번 레이아웃 2번 레이아웃
     ImageView leftObj, rightObj;
