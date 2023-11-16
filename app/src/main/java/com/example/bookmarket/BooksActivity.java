@@ -2,6 +2,7 @@ package com.example.bookmarket;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -56,6 +57,7 @@ public class BooksActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"자바 코딩의 기술", Toast.LENGTH_SHORT).show();
+                BookItem1();
             }
         });
 
@@ -63,6 +65,7 @@ public class BooksActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"머신러닝을 다루는 기술", Toast.LENGTH_SHORT).show();
+                BookItem2();
             }
         });
 
@@ -70,6 +73,7 @@ public class BooksActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"모던 리눅스 관리", Toast.LENGTH_SHORT).show();
+                BookItem3();
             }
         });
 
@@ -77,6 +81,7 @@ public class BooksActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"유니티 교과서", Toast.LENGTH_SHORT).show();
+                BookItem4();
             }
         });
 
@@ -84,6 +89,7 @@ public class BooksActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"자바 코딩의 기술", Toast.LENGTH_SHORT).show();
+                BookItem1();
             }
         });
 
@@ -91,6 +97,7 @@ public class BooksActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"머신러닝을 다루는 기술", Toast.LENGTH_SHORT).show();
+                BookItem2();
             }
         });
 
@@ -98,6 +105,7 @@ public class BooksActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"모던 리눅스 관리", Toast.LENGTH_SHORT).show();
+                BookItem3();
             }
         });
 
@@ -106,8 +114,76 @@ public class BooksActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(),"유니티 교과서", Toast.LENGTH_SHORT).show();
+                BookItem4();
             }
         });
-
+    }
+    public void BookItem1(){
+        Intent intent = new Intent(getApplicationContext(), BookActivity.class);
+        intent.putExtra("id", "book11");
+        intent.putExtra("name", "자바 코딩의 기술");
+        intent.putExtra("price", "22000");
+        intent.putExtra("date", "2020-07-30");
+        intent.putExtra("writer", "사이먼 하러,리누스 디에츠,요르그 레너드/심지현");
+        intent.putExtra("page", "264쪽");
+        intent.putExtra("description", "코딩 스킬을 개선하는 " +
+                "가장 좋은 방법은 전문가의 코드를 읽는 것이다. " +
+                "오픈 소스 코드를 읽으면서 이해하면 좋지만," +
+                "너무 방대하고 스스로 맥락을 찾는 게 어려울 수 있다." +
+                "그럴 땐 이 책처럼 현장에서 자주 발견되는 문제 유형 70가지와 " +
+                "해법을 비교하면서 자신의 코드에서 개선할 점을 찾는 것이 좋다.");
+        intent.putExtra("category", "프로그래밍/오픈소스");
+        startActivity(intent);
+    }
+    public void BookItem2(){
+        Intent intent = new Intent(getApplicationContext(), BookActivity.class);
+        intent.putExtra("id", "book21");
+        intent.putExtra("name", "머신러닝를 다루는 기술");
+        intent.putExtra("price", "42000");
+        intent.putExtra("date", "2022-07-30");
+        intent.putExtra("writer", "사이먼 하러,심지현");
+        intent.putExtra("page", "364쪽");
+        intent.putExtra("description", "코딩 스킬을 개선하는 " +
+                "가장 좋은 방법은 전문가의 코드를 읽는 것이다. " +
+                "오픈 소스 코드를 읽으면서 이해하면 좋지만," +
+                "너무 방대하고 스스로 맥락을 찾는 게 어려울 수 있다." +
+                "그럴 땐 이 책처럼 현장에서 자주 발견되는 문제 유형 70가지와 " +
+                "해법을 비교하면서 자신의 코드에서 개선할 점을 찾는 것이 좋다.");
+        intent.putExtra("category", "프로그래밍/오픈소스");
+        startActivity(intent);
+    }
+    public void BookItem3(){
+        Intent intent = new Intent(getApplicationContext(), BookActivity.class);
+        intent.putExtra("id", "book31");
+        intent.putExtra("name", "모던 리눅스 관리");
+        intent.putExtra("price", "72000");
+        intent.putExtra("date", "2020-07-30");
+        intent.putExtra("writer", "요르그 레너드/심지현");
+        intent.putExtra("page", "284쪽");
+        intent.putExtra("description", "코딩 스킬을 개선하는 " +
+                "가장 좋은 방법은 전문가의 코드를 읽는 것이다. " +
+                "오픈 소스 코드를 읽으면서 이해하면 좋지만," +
+                "너무 방대하고 스스로 맥락을 찾는 게 어려울 수 있다." +
+                "그럴 땐 이 책처럼 현장에서 자주 발견되는 문제 유형 70가지와 " +
+                "해법을 비교하면서 자신의 코드에서 개선할 점을 찾는 것이 좋다.");
+        intent.putExtra("category", "프로그래밍/오픈소스");
+        startActivity(intent);
+    }
+    public void BookItem4(){
+        Intent intent = new Intent(getApplicationContext(), BookActivity.class);
+        intent.putExtra("id", "book41");
+        intent.putExtra("name", "유니티 교과서");
+        intent.putExtra("price", "12000");
+        intent.putExtra("date", "2023-07-30");
+        intent.putExtra("writer", "리누스 디에츠,요르그 레너드/심지현");
+        intent.putExtra("page", "421쪽");
+        intent.putExtra("description", "코딩 스킬을 개선하는 " +
+                "가장 좋은 방법은 전문가의 코드를 읽는 것이다. " +
+                "오픈 소스 코드를 읽으면서 이해하면 좋지만," +
+                "너무 방대하고 스스로 맥락을 찾는 게 어려울 수 있다." +
+                "그럴 땐 이 책처럼 현장에서 자주 발견되는 문제 유형 70가지와 " +
+                "해법을 비교하면서 자신의 코드에서 개선할 점을 찾는 것이 좋다.");
+        intent.putExtra("category", "프로그래밍/오픈소스");
+        startActivity(intent);
     }
 }

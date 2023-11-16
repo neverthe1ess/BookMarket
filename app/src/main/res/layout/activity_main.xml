@@ -41,6 +41,7 @@
                 android:id="@+id/imageButton"
                 android:layout_width="200dp"
                 android:layout_height="140dp"
+                android:onClick="onBookClick"
                 app:srcCompat="@drawable/menu01" />
 
             <ImageButton
